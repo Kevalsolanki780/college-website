@@ -1,0 +1,412 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Marwadi university of Engineering</title>
+
+    Keval Solanki(92600120109) 31
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            line-height: 1.6;
+            background: #f4f7fb;
+            color: #333;
+        }
+
+        /* Header */
+        header {
+            background: linear-gradient(135deg, #062c5c, #1261a0);
+            color: white;
+            padding: 25px 8%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin-left: 22px;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            color: #ffd166;
+        }
+
+        /* Hero */
+        .hero {
+            min-height: 500px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            color: white;
+            padding: 40px 20px;
+            background:
+                linear-gradient(rgba(0, 35, 75, 0.75),
+                    rgba(0, 35, 75, 0.75)),
+                url("https://tse2.mm.bing.net/th/id/OIP.RC_7iYVUL71AS4utdj6Q0QHaDI?r=0&w=736&h=311&rs=1&pid=ImgDetMain&o=7&rm=3")
+
+            center/cover;
+            }
+
+            .hero h1 {
+                font-size: 48px; margin-bottom: 15px;
+            }
+
+            .hero p {
+                font-size: 20px; max-width: 750px; margin: auto;
+            }
+
+            .btn {
+                display: inline-block; margin-top: 25px; padding: 12px 28px; background: #ffd166; color: #062c5c;
+                text-decoration: none; border-radius: 25px;
+                font-weight: bold;
+            }
+
+            /* General sections */
+            section {
+                padding: 70px 8%;
+            }
+
+            .section-title {
+                text-align: center; color: #062c5c; font-size: 34px;
+                margin-bottom: 40px;
+            }
+
+            /* Vision Mission */
+            .vision-mission {
+                display: grid;
+                grid-template-columns: repeat(2, 1fr); gap: 30px;
+            }
+
+            .card {
+                background: white; padding: 30px; border-radius: 12px;
+                box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08); transition: 0.3s;
+            }
+
+            .card:hover {
+                transform: translateY(-7px);
+            }
+
+            .card h3 {
+                color: #1261a0; margin-bottom: 15px; font-size: 24px;
+            }
+
+
+            /* Outcomes */
+            .outcomes {
+                background: #eaf2fb;
+            }
+
+            .outcome-grid {
+                display: grid;
+                grid-template-columns: repeat(3, 1fr); gap: 20px;
+            }
+
+            .outcome {
+                background: white; padding: 25px;
+                border-left: 5px solid #1261a0; border-radius: 8px;
+            }
+
+            .outcome span {
+                display: inline-block;
+                background: #1261a0; color: white;
+                width: 35px; height: 35px;
+                text-align: center; padding-top: 5px;
+                border-radius: 50%; margin-bottom: 12px; font-weight: bold;
+            }
+
+            /* Courses */
+            .courses {
+                display: grid;
+                grid-template-columns: repeat(3, 1fr); gap: 25px;
+            }
+
+            .course {
+                background: white; text-align: center;
+                padding: 30px 20px; border-radius: 12px;
+                box-shadow: 0 5px 18px rgba(0, 0, 0, 0.08);
+            }
+
+            .course h3 {
+                color: #062c5c;
+                margin-bottom: 10px;
+            }
+
+            .course p {
+                color: #666;
+            }
+
+            /* Gallery */
+            .gallery {
+                background: #eaf2fb;
+            }
+
+            .gallery-grid {
+                display: grid;
+                grid-template-columns: repeat(3, 1fr); gap: 18px;
+
+            }
+
+            .gallery-grid img {
+                width: 100%; height: 230px; object-fit: cover;
+                border-radius: 10px; transition: 0.4s;
+            }
+
+            .gallery-grid img:hover {
+                transform: scale(1.04);
+            }
+
+            /* Recruiters */
+            .recruiters {
+                display: grid;
+                grid-template-columns: repeat(4, 1fr); gap: 20px;
+                text-align: center;
+            }
+
+            .company {
+                background: white; padding: 25px; border-radius: 10px; font-size: 20px;
+                font-weight: bold;
+                color: #1261a0;
+                box-shadow: 0 4px 15px rgba(0, 0, 0, 0.07);
+            }
+
+            /* Footer */
+            footer {
+                background: #062c5c; color: white;
+                text-align: center; padding: 30px;
+            }
+
+            footer p {
+                margin: 5px;
+            }
+
+            /* Responsive */
+            @media (max-width: 900px) {
+                header {
+                    flex-direction: column; gap: 15px;
+                }
+
+                nav a {
+                    margin: 0 7px; font-size: 14px;
+                }
+
+                .hero h1 {
+                    font-size: 36px;
+                }
+
+                .vision-mission,
+
+                .outcome-grid,
+                .courses,
+                .gallery-grid {
+                    grid-template-columns: 1fr 1fr;
+                }
+
+                .recruiters {
+                    grid-template-columns: 1fr 1fr;
+                }
+            }
+
+            @media (max-width: 600px) {
+                .hero h1 {
+                    font-size: 30px;
+                }
+
+                section {
+                    padding: 50px 5%;
+                }
+
+                .vision-mission,
+                .outcome-grid,
+                .courses,
+                .gallery-grid,
+                .recruiters {
+                    grid-template-columns: 1fr;
+                }
+
+                nav {
+                    text-align: center;
+                }
+            }
+    </style>
+</head>
+
+<body>
+    <!-- Header -->
+    <header>
+        <div class="logo">Marwadi College of Engineering</div>
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#vision">Vision</a>
+            <a href="#outcomes">PSOs</a>
+            <a href="#courses">Courses</a>
+
+            Keval Solanki(92600120109) 36
+            <a href="#gallery">Gallery</a>
+            <a href="#recruiters">Recruiters</a>
+        </nav>
+    </header>
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div>
+            <h1>Marwadi College of Engineering</h1>
+            <p>
+                Empowering students with knowledge, innovation and skills to build a better and sustainable
+                future.
+            </p>
+            <a href="#courses" class="btn">Explore Courses</a>
+        </div>
+    </section>
+    <!-- Vision & Mission -->
+    <section id="vision">
+        <h2 class="section-title">Vision & Mission</h2>
+        <div class="vision-mission">
+            <div class="card">
+                <h3>Our Vision</h3>
+                <p>
+                    To emerge as a center of excellence in technical education, research and innovation by
+                    nurturing globally competent, socially responsible and ethical professionals.
+                </p>
+            </div>
+            <div class="card">
+                <h3>Our Mission</h3>
+                <p>
+                    To provide quality education through innovative teaching practices, promote research and
+                    entrepreneurship, develop professional skills, and encourage students to contribute
+                    positively to society.
+                </p>
+            </div>
+        </div>
+    </section>
+    <!-- Program Specific Outcomes -->
+    <section class="outcomes" id="outcomes">
+        <h2 class="section-title">Program Specific Outcomes</h2>
+
+        Keval Solanki(92600120109) 37
+        <div class="outcome-grid">
+            <div class="outcome">
+                <span>PSO1</span>
+                <p>
+                    Apply engineering fundamentals and modern technologies to solve real-world technical
+                    problems.
+                </p>
+            </div>
+            <div class="outcome">
+                <span>PSO2</span>
+                <p>
+                    Design and develop innovative solutions using appropriate tools, techniques and engineering
+                    practices.
+                </p>
+            </div>
+            <div class="outcome">
+                <span>PSO3</span>
+                <p>
+                    Demonstrate professional skills, teamwork, communication and ethical responsibility in
+                    engineering practice.
+                </p>
+            </div>
+        </div>
+    </section>
+    <!-- Courses -->
+    <section id="courses">
+        <h2 class="section-title">Courses Offered</h2>
+        <div class="courses">
+            <div class="course">
+                <h3>Computer Engineering</h3>
+                <p>
+                    Programming, databases, operating systems, artificial intelligence and software development.
+                </p>
+            </div>
+            <div class="course">
+                <h3>Information Technology</h3>
+                <p>
+                    Web technologies, cloud computing, cybersecurity, networking and information systems.
+                </p>
+
+                Keval Solanki(92600120109) 38
+            </div>
+            <div class="course">
+                <h3>Mechanical Engineering</h3>
+                <p>
+                    Design, manufacturing, thermodynamics, robotics and industrial engineering.
+                </p>
+            </div>
+            <div class="course">
+                <h3>Civil Engineering</h3>
+                <p>
+                    Structural engineering, construction, transportation, environmental and geotechnical
+                    engineering.
+                </p>
+            </div>
+            <div class="course">
+                <h3>Electrical Engineering</h3>
+                <p>
+                    Electrical machines, power systems, control systems and renewable energy technologies.
+                </p>
+            </div>
+            <div class="course">
+                <h3>Electronics & Communication</h3>
+                <p>
+                    Embedded systems, communication systems, VLSI, IoT and digital electronics.
+                </p>
+            </div>
+        </div>
+    </section>
+    <!-- Image Gallery -->
+    <section class="gallery" id="gallery">
+        <h2 class="section-title">Image Gallery – College Events</h2>
+        <div class="gallery-grid">
+            <img src="WhatsApp Image 2026-08-12 at 7.39.58 PM.jpeg" alt="College campus" />
+            <img Keval Solanki(92600120109) 39 src="WhatsApp Image 2026-08-12 at 7.39.44 PM.jpeg"
+                alt="Students event" />
+            <img src="WhatsApp Image 2026-08-12 at 7.39.47 PM.jpeg" alt="College seminar" />
+            <img src="WhatsApp Image 2026-08-12 at 7.39.53 PM.jpeg" alt="Cultural event" />
+            <img src="WhatsApp Image 2026-08-12 at 7.39.38 PM.jpeg" alt="Students in classroom" />
+            <img src="WhatsApp Image 2026-08-12 at 7.46.19 PM.jpeg" alt="Academic event" />
+        </div>
+    </section>
+    <!-- Top Recruiters -->
+    <section id="recruiters">
+        <h2 class="section-title">Our Top Recruiters</h2>
+        <div class="recruiters">
+            <div class="company">TCS</div>
+            <div class="company">Infosys</div>
+            <div class="company">Wipro</div>
+            <div class="company">Accenture</div>
+            <div class="company">Microsoft</div>
+            <div class="company">Amazon</div>
+            <div class="company">Deloitte</div>
+            <div class="company">Capgemini</div>
+        </div>
+    </section>
+    <!-- Footer -->
+    <footer>
+        <p><strong>Marwadi College of Engineering</strong></p>
+
+        Keval Solanki(92600120109) 40
+        <p>Knowledge • Innovation • Excellence</p>
+        <p>© 2026 Marwadi College. All Rights Reserved.</p>
+    </footer>
+</body>
+
+</html>
